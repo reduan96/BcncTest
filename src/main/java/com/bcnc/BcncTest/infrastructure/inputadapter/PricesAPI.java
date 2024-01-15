@@ -1,4 +1,4 @@
-package infrastructure.inputadapter;
+package com.bcnc.BcncTest.infrastructure.inputadapter;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
