@@ -1,4 +1,4 @@
-package domain;
+package com.bcnc.BcncTest.domain;
 
 import lombok.*;
 import java.time.LocalDateTime;
