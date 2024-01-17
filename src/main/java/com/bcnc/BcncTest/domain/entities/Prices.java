@@ -1,4 +1,4 @@
-package com.bcnc.BcncTest.domain;
+package com.bcnc.BcncTest.domain.entities;
 
 import lombok.*;
 import java.time.LocalDateTime;
@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Prices {
     private short brandId;
     private LocalDateTime startDate;
