@@ -1,4 +1,4 @@
-package com.bcnc.BcncTest;
+package com.test.HexArqTest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

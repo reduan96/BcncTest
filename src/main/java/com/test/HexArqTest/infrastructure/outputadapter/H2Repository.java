@@ -1,7 +1,7 @@
-package com.bcnc.BcncTest.infrastructure.outputadapter;
+package com.test.HexArqTest.infrastructure.outputadapter;
 
-import com.bcnc.BcncTest.domain.DTOs.PricesResult;
-import com.bcnc.BcncTest.infrastructure.outportport.PricesRepository;
+import com.test.HexArqTest.domain.DTOs.PricesResult;
+import com.test.HexArqTest.infrastructure.outportport.PricesRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import org.springframework.beans.factory.annotation.Autowired;

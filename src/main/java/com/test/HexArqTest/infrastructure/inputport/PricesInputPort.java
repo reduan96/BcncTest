@@ -1,6 +1,6 @@
-package com.bcnc.BcncTest.infrastructure.inputport;
+package com.test.HexArqTest.infrastructure.inputport;
 
-import com.bcnc.BcncTest.domain.DTOs.PricesResult;
+import com.test.HexArqTest.domain.DTOs.PricesResult;
 
 import java.time.LocalDateTime;
 

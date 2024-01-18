@@ -1,8 +1,8 @@
-package com.bcnc.BcncTest.infrastructure.inputadapter;
+package com.test.HexArqTest.infrastructure.inputadapter;
 
-import com.bcnc.BcncTest.domain.DTOs.PricesResult;
-import com.bcnc.BcncTest.domain.exceptions.ApiRequestException;
-import com.bcnc.BcncTest.infrastructure.inputport.PricesInputPort;
+import com.test.HexArqTest.domain.DTOs.PricesResult;
+import com.test.HexArqTest.domain.exceptions.ApiRequestException;
+import com.test.HexArqTest.infrastructure.inputport.PricesInputPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
