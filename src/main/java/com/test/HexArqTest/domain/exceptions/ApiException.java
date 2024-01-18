@@ -1,4 +1,4 @@
-package com.bcnc.BcncTest.domain.exceptions;
+package com.test.HexArqTest.domain.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

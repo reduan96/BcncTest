@@ -1,8 +1,8 @@
-package com.bcnc.BcncTest.application;
+package com.test.HexArqTest.application;
 
-import com.bcnc.BcncTest.domain.DTOs.PricesResult;
-import com.bcnc.BcncTest.infrastructure.inputport.PricesInputPort;
-import com.bcnc.BcncTest.infrastructure.outportport.PricesRepository;
+import com.test.HexArqTest.domain.DTOs.PricesResult;
+import com.test.HexArqTest.infrastructure.inputport.PricesInputPort;
+import com.test.HexArqTest.infrastructure.outportport.PricesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

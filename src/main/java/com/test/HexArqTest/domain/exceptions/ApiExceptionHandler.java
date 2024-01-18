@@ -1,4 +1,4 @@
-package com.bcnc.BcncTest.domain.exceptions;
+package com.test.HexArqTest.domain.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
