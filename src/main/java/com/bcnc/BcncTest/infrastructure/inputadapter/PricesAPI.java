@@ -1,6 +1,7 @@
 package com.bcnc.BcncTest.infrastructure.inputadapter;
 
 import com.bcnc.BcncTest.domain.DTOs.PricesResult;
+import com.bcnc.BcncTest.domain.exceptions.ApiRequestException;
 import com.bcnc.BcncTest.infrastructure.inputport.PricesInputPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +26,11 @@ public class PricesAPI {
     @GetMapping("/getAppliedPrice/{startDate}/{productId}/{brandId}")
     public PricesResult getAppliedPrice(@PathVariable LocalDateTime startDate,
                                         @PathVariable int productId,
-                                        @PathVariable short brandId){
-        return pricesInputPort.getAppliedPrice(startDate, productId, brandId);
+                                        @PathVariable short brandId) {
+        try{
+            return pricesInputPort.getAppliedPrice(startDate, productId, brandId);
+        }catch (Exception e){
+            throw new ApiRequestException("Error due inserted data/Price record doesn't found");
+        }
     }
 }
