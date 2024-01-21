@@ -6,5 +6,5 @@ import java.time.LocalDateTime;
 
 public interface PricesInputPort {
 
-    PricesResult getAppliedPrice(LocalDateTime startDate, int productId, short brandId);
+    PricesResult getAppliedPrice(LocalDateTime startDate, int productId, int brandId);
 }
