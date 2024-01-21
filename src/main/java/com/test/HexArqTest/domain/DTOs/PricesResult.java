@@ -10,10 +10,10 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class PricesResult {
-    private short brandId;
+    private int brandId;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private short priceList;
+    private int priceList;
     private int productId;
     private double price;
 }
