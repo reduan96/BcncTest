@@ -26,25 +26,31 @@ public class H2Repository implements PricesRepository {
         query.setParameter(1, brandId);
         query.setParameter(2, productId);
         query.setParameter(3, startDate);
-        //We get result as an Object cause it's an Object
-        Object result = query.getResultList().get(0);
-        //We cast our Object to an array.
-        //It's necessary for take our data retrieved from database
-        Object[] finalResult = (Object[]) result;
-        //We cast our object[pos] dates to timestamp
-        Timestamp startDateTimestamp = (Timestamp) finalResult[3];
-        Timestamp endDateTimestamp = (Timestamp) finalResult[4];
+        //If its null we return it before access to nothing
+        if(query.getResultList() == null){
+            return null;
+        }else {
+            //We get result as an Object cause it's an Object
+            Object result = query.getResultList().get(0);
+            //We cast our Object to an array.
+            //It's necessary for take our data retrieved from database
+            Object[] finalResult = (Object[]) result;
+            //We cast our object[pos] dates to timestamp
+            Timestamp startDateTimestamp = (Timestamp) finalResult[3];
+            Timestamp endDateTimestamp = (Timestamp) finalResult[4];
 
-        //We construct our PricesResult object
-        PricesResult prices = PricesResult.builder()
-                .productId((Integer) finalResult[0])
-                .brandId((Short) finalResult[1])
-                .priceList((Short) finalResult[2])
-                .startDate(startDateTimestamp.toLocalDateTime())
-                .endDate(endDateTimestamp.toLocalDateTime())
-                .price((Double) finalResult[5])
-                .build();
+            //We construct our PricesResult object
+            PricesResult prices = PricesResult.builder()
+                    .productId((Integer) finalResult[0])
+                    .brandId((Integer) finalResult[1])
+                    .priceList((Integer) finalResult[2])
+                    .startDate(startDateTimestamp.toLocalDateTime())
+                    .endDate(endDateTimestamp.toLocalDateTime())
+                    .price((Double) finalResult[5])
+                    .build();
 
-        return prices;
+            return prices;
+        }
+
     }
 }

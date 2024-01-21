@@ -29,7 +29,7 @@ public class PricesAPI {
         try{
             return pricesInputPort.getAppliedPrice(startDate, productId, brandId);
         }catch (Exception e){
-            throw new ApiRequestException("Error due inserted data/Price record doesn't found");
+            throw new ApiRequestException("Error due inserted data");
         }
     }
 }
