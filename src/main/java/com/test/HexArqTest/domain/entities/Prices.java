@@ -16,14 +16,14 @@ import java.time.LocalDateTime;
 public class Prices {
 
     @Id
-    private short pricesId;
+    private int pricesId;
 
-    private short brandId;
+    private int brandId;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private short priceList;
+    private int priceList;
     private int productId;
-    private short priority;
+    private int priority;
     private double price;
     private String curr;
 }
