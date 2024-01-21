@@ -1,13 +1,13 @@
 DROP TABLE IF EXISTS PRICES;
 
 CREATE TABLE PRICES(
-"PRICES_ID" smallint,
-"BRAND_ID" smallint,
+"PRICES_ID" int,
+"BRAND_ID" int,
 "START_DATE" timestamp,
 "END_DATE" timestamp,
-"PRICE_LIST" smallint,
+"PRICE_LIST" int,
 "PRODUCT_ID" int,
-"PRIORITY" smallint,
+"PRIORITY" int,
 "PRICE" double,
 "CURR" varchar(3)
 );
