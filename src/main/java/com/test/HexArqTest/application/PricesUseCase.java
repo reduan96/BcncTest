@@ -15,7 +15,7 @@ public class PricesUseCase implements PricesInputPort {
     PricesRepository pricesRepository;
 
     @Override
-    public PricesResult getAppliedPrice(LocalDateTime startDate, int productId, short brandId) {
+    public PricesResult getAppliedPrice(LocalDateTime startDate, int productId, int brandId) {
         return pricesRepository.getAppliedPrice(startDate, productId, brandId);
     }
 }
