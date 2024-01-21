@@ -15,12 +15,11 @@ import java.time.LocalDateTime;
 @RequestMapping("/prices")
 public class PricesAPI {
 
-    @Autowired
-    PricesInputPort pricesInputPort;
+    private final PricesInputPort pricesInputPort;
 
-    @GetMapping("/helloWorld")
-    public String HelloWorld() {
-        return "Hello World";
+    @Autowired
+    public PricesAPI(PricesInputPort pricesInputPort) {
+        this.pricesInputPort = pricesInputPort;
     }
 
     @GetMapping("/getAppliedPrice/{startDate}/{productId}/{brandId}")

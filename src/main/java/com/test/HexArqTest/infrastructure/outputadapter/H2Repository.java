@@ -18,7 +18,7 @@ public class H2Repository implements PricesRepository {
     EntityManager entityManager;
 
     @Override
-    public PricesResult getAppliedPrice(LocalDateTime startDate, int productId, short brandId) {
+    public PricesResult getAppliedPrice(LocalDateTime startDate, int productId, int brandId) {
 
         String querySql = "SELECT PRODUCT_ID, BRAND_ID, PRICE_LIST, START_DATE, END_DATE, PRICE FROM PRICES " +
                 "WHERE BRAND_ID = ?1 AND PRODUCT_ID = ?2 AND ?3 BETWEEN START_DATE AND END_DATE";
