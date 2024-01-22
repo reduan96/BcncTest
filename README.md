@@ -18,6 +18,7 @@ I did it on Hexagonal Architecture (Ports and Adapters Architecture). Its an Arc
 
 - Install your favourite IDE (Mine is IntelliJ Community !)
 - download or clone the project and import it in your IDE
+- Lombok plugin
 - It runs under JAVA 17
 ## Usage
 
